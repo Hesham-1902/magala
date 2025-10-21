@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجلة هيئة قضايا الدولة</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="logo.png" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <div class="logo-container">
+                            <img src="logo.png" alt="شعار هيئة قضايا الدولة" class="logo">
+                            <div class="logo-text">
+                                <h1 class="magazine-title">مجلة</h1>
+                                <h2 class="org-name">هيئة قضايا الدولة</h2>
+                            </div>
+
+                            <a href="#" class="member-login btn btn-outline" id="loginBtn" aria-haspopup="dialog" aria-controls="loginModal">
+                                <i class="fas fa-sign-in-alt"></i>
+                                دخول الأعضاء
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header-features">
+                        <div class="feature-item">
+                            <i class="fas fa-balance-scale"></i>
+                            <div class="feature-text">
+                                <span>العدالة</span>
+                                <small>أسس القانون</small>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-gavel"></i>
+                            <div class="feature-text">
+                                <span>القضاء</span>
+                                <small>سيادة القانون</small>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-book"></i>
+                            <div class="feature-text">
+                                <span>المعرفة</span>
+                                <small>الاجتهادات القضائية</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link"><i class="fas fa-newspaper"></i> أعداد المجلة <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">العدد الحالي</a></li>
+                            <li><a href="#">الأعداد السابقة</a></li>
+                            <li><a href="#">الأرشيف الرقمي</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link"><i class="fas fa-gavel"></i> الدراسات القانونية <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">الأبحاث المحكمة</a></li>
+                            <li><a href="#">الدراسات التحليلية</a></li>
+                            <li><a href="#">الأطروحات العلمية</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link"><i class="fas fa-balance-scale"></i> الاجتهادات القضائية <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">أحكام المحكمة الدستورية</a></li>
+                            <li><a href="#">أحكام محكمة النقض</a></li>
+                            <li><a href="#">أحكام المحاكم الإدارية</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-users"></i> أخبار الهيئة</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-pen-nib"></i> مقالات الرأي</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-landmark"></i> الذاكرة القضائية</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="search-container" role="search">
+                        <input type="text" placeholder="ابحث في المجلة..." class="search-input" aria-label="ابحث في المجلة">
+                        <button class="search-btn" aria-label="بحث"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="mobile-menu-toggle" aria-label="قائمة الجوال">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-layout-container">
+        <div class="container">
+            <div class="main-layout-grid">
+
+                <aside class="sidebar sidebar-right">
+                    <div class="sidebar-card president-card">
+                        <div class="president-header">
+                            <div class="president-avatar">
+                                <img src="logo11.png" alt="صورة رئيس الهيئة">
+                            </div>
+                            <div class="president-info">
+                                <h3>كلمة السيد المستشار الدكتور الوزير</h3>
+                                <p>رئيس هيئة قضايا الدولة</p>
+                                <span>المستشار الدكتور حسين مدكور</span>
+                            </div>
+                        </div>
+                        <div class="president-content">
+                            <p>إن العدالة هي الركيزة الأساسية في بناء المجتمعات، ويُعد القانون أداتها الفاعلة في تحقيقها وصونها. وإيمانا من هيئة قضايا الدولة بأهمية دورها فإنها تواصل جهودها في تطوير المنظومة التشريعية لمواكبة تطورات المجتمع المعاصر.</p>
+                            <p>ومن هذا المنطلق يأتي إطلاق الموقع الإلكتروني لمجلة "قضايا الدولة" ليكون منارة علمية وثقافية تسهم في نشر الوعي القانوني، وتعزيز سبل الوصول إلى أحدث التشريعات والأبحاث والاجتهادات القضائية التي تسهم في تشكيل مستقبل العدالة.</p>
+                            <p>وإننا نؤكد التزامنا بأن تظل المجلة منارة علمية وثقافية تسهم في نشر الوعي القانوني، وتعزيز سبل الوصول إلى أحدث التشريعات والأبحاث والاجتهادات القضائية التي تسهم في تشكيل مستقبل العدالة. كما نؤكد التزامنا بأن تظل المجلة منبرًا رائدًا يخدم رجال القانون والباحثين والمهتمين بالشأن القضائي، دعمًا لمسيرة الحق وسيادة القانون.</p>
+                            <p>والله الموفق</p>
+                        </div>
+                        <a href="#" class="read-more">قراءة الكلمة كاملة <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </aside>
+
+                <div class="main-content-area">
+                    
+                    <section class="magazine-hero">
+                        <div class="hero-overlay"></div>
+                        <div class="container">
+                            <div class="hero-content">
+                                <div class="magazine-issue">
+                                    <h1 class="magazine-title">مجلة هيئة قضايا الدولة</h1>
+                                    <h2 class="issue-title">العدد ٢٣ - أكتوبر ٢٠٢٥</h2>
+                                    
+                                    <blockquote class="issue-quote">
+                                        "علمنا هذا رأى فمن جاءنا بأحسن منه قبلناه "
+                                        <cite>ابو حنيفة</cite>
+                                    </blockquote>
+                                    
+                                    <p class="issue-description">تصدر عن الادارة العامة لهيئة قضايا الدولة</p>
+                                    
+                                    <div class="hero-actions">
+                                        <button class="btn btn-gold"><i class="fas fa-book-open"></i> اقرأ العدد الكامل</button>
+                                        <button class="btn btn-outline-light"><i class="fas fa-download"></i> تحميل PDF</button>
+                                    </div>
+                                </div>
+                                <div class="magazine-cover">
+                                    <div class="cover-container">
+                                        <div class="cover-design">
+                                            <div class="cover-header">
+                                                <div class="cover-logo">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </div>
+                                                <div class="cover-title">
+                                                    <h3>مجلة هيئة قضايا الدولة</h3>
+                                                    <p>العدد ٢٣ - أكتوبر ٢٠٢٥</p>
+                                                </div>
+                                            </div>
+                                            <div class="cover-symbol">
+                                                <img src="logo.png" alt="غلاف المجلة" style="width: 150px; height: auto;">
+                                                
+                                            </div>
+                                            <div class="cover-highlights">
+                                                <h4>أبرز العناوين</h4>
+                                                <ul>
+                                                    <li>تطور الاجتهاد القضائي في منازعات العقود الإدارية</li>
+                                                    <li>الرقابة القضائية على أعمال الإدارة</li>
+                                                    <li>الوساطة كبديل لحل المنازعات</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <main class="main-content">
+                        <section class="quick-access">
+                            <div class="container">
+                                <div class="quick-access-grid">
+                                    <a href="#" class="quick-card">
+                                        <div class="quick-icon">
+                                            <i class="fas fa-gavel"></i>
+                                        </div>
+                                        <h3>الاجتهادات القضائية</h3>
+                                        <p>أحدث الأحكام الصادرة عن المحاكم</p>
+                                    </a>
+                                    <a href="#" class="quick-card">
+                                        <div class="quick-icon">
+                                            <i class="fas fa-book"></i>
+                                        </div>
+                                        <h3>الدراسات القانونية</h3>
+                                        <p>أبحاث ودراسات قانونية متخصصة</p>
+                                    </a>
+                                    <a href="#" class="quick-card">
+                                        <div class="quick-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <h3>أخبار الهيئة</h3>
+                                        <p>فعاليات وأنشطة الهيئة</p>
+                                    </a>
+
+                                    <div class="quick-card">
+                                        <a href="#" class="quick-card-link" aria-label="الذاكرة القضائية">
+                                            <div class="quick-icon">
+                                                <i class="fas fa-landmark"></i>
+                                            </div>
+                                            <h3>الذاكرة القضائية</h3>
+                                            <p>أرشيف تاريخي للقضاء المصري</p>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                
+                        <section class="featured-content">
+                            <div class="container">
+                                <div class="section-header">
+                                    <h2 class="section-title">محتويات العدد الحالي</h2>
+                                    <div class="section-actions">
+                                        <a href="#" class="view-all">عرض الفهرس الكامل <i class="fas fa-arrow-left"></i></a>
+                                    </div>
+                                </div>
+                
+                                <div class="content-tabs">
+                                    <div class="tab-headers">
+                                        <button class="tab-header active" data-tab="studies">الدراسات القانونية</button>
+                                        <button class="tab-header" data-tab="judgements">الاجتهادات القضائية</button>
+                                        <button class="tab-header" data-tab="news">أخبار الهيئة</button>
+                                        <button class="tab-header" data-tab="opinions">مقالات الرأي</button>
+                                    </div>
+                                    
+                                    <div class="tab-content active" id="studies">
+                                        <div class="articles-grid">
+                                            <article class="article-card featured">
+                                                <div class="article-badge">مميز</div>
+                                                <div class="article-image">
+                                                    <img src="https://via.placeholder.com/400x250/1a3a5c/ffffff?text=دراسة+قانونية" alt="صورة المقال">
+                                                </div>
+                                                <div class="article-content">
+                                                    <span class="article-category">دراسة قانونية</span>
+                                                    <h3 class="article-title">تطور الاجتهاد القضائي في منازعات العقود الإدارية في مصر</h3>
+                                                    <p class="article-excerpt">دراسة تحليلية لتطور الاجتهاد القضائي المصري في منازعات العقود الإدارية خلال العقد الماضي وأثره على منظومة العدالة الإدارية.</p>
+                                                    <div class="article-meta">
+                                                        <div class="author-info">
+                                                            <div class="author-avatar">
+                                                                <img src="https://via.placeholder.com/40x40/1a3a5c/ffffff?text=د" alt="صورة الكاتب">
+                                                            </div>
+                                                            <div class="author-details">
+                                                                <span class="author-name">د. محمود السيد</span>
+                                                                <span class="article-date">15 أكتوبر 2025</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="article-stats">
+                                                            <span><i class="far fa-eye"></i> 1,245</span>
+                                                            <span><i class="far fa-file-pdf"></i> PDF</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            
+                                            <article class="article-card">
+                                                <div class="article-content">
+                                                    <span class="article-category">بحث أكاديمي</span>
+                                                    <h3 class="article-title">الرقابة القضائية على أعمال الإدارة بين النظرية والتطبيق</h3>
+                                                    <p class="article-excerpt">تحليل نقدي لنطاق الرقابة القضائية على أعمال الإدارة في النظام القانوني المصري والمقارن.</p>
+                                                    <div class="article-meta">
+                                                        <div class="author-info">
+                                                            <div class="author-avatar">
+                                                                <img src="https://via.placeholder.com/40x40/1a3a5c/ffffff?text=أ" alt="صورة الكاتب">
+                                                            </div>
+                                                            <div class="author-details">
+                                                                <span class="author-name">أ. فاطمة أحمد</span>
+                                                                <span class="article-date">12 أكتوبر 2025</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="article-stats">
+                                                            <span><i class="far fa-eye"></i> 892</span>
+                                                            <span><i class="far fa-file-pdf"></i> PDF</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            
+                                            <article class="article-card">
+                                                <div class="article-content">
+                                                    <span class="article-category">ورقة بحثية</span>
+                                                    <h3 class="article-title">الوساطة كبديل لحل المنازعات في النظام القضائي المصري</h3>
+                                                    <p class="article-excerpt">دراسة مقارنة لتطبيق نظام الوساطة في حل المنازعات وآفاق تطبيقه في النظام القضائي المصري.</p>
+                                                    <div class="article-meta">
+                                                        <div class="author-info">
+                                                            <div class="author-avatar">
+                                                                <img src="https://via.placeholder.com/40x40/1a3a5c/ffffff?text=م" alt="صورة الكاتب">
+                                                            </div>
+                                                            <div class="author-details">
+                                                                <span class="author-name">م. خالد محمد</span>
+                                                                <span class="article-date">10 أكتوبر 2025</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="article-stats">
+                                                            <span><i class="far fa-eye"></i> 1,532</span>
+                                                            <span><i class="far fa-file-pdf"></i> PDF</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tab-content" id="judgements">
+                                        <div class="judgements-list">
+                                            <div class="judgement-card">
+                                                <div class="judgement-icon">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </div>
+                                                <div class="judgement-content">
+                                                    <h3>حكم المحكمة الدستورية العليا في الطعن رقم ٥٦٧ لسنة ٤٥ قضائية</h3>
+                                                    <p>بشأن دستورية المادة ٧٢ من قانون المرافعات المدنية والتجارية</p>
+                                                    <div class="judgement-meta">
+                                                        <span class="court">المحكمة الدستورية العليا</span>
+                                                        <span class="date">8 أكتوبر 2025</span>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="judgement-link"><i class="fas fa-external-link-alt"></i></a>
+                                            </div>
+                                            
+                                            <div class="judgement-card">
+                                                <div class="judgement-icon">
+                                                    <i class="fas fa-gavel"></i>
+                                                </div>
+                                                <div class="judgement-content">
+                                                    <h3>حكم محكمة النقض في الطعن رقم ١٣٢٥٤ لسنة ٩٢ قضائية</h3>
+                                                    <p>بتفسير نطاق تطبيق قانون الاستثمار الجديد على المنازعات القائمة</p>
+                                                    <div class="judgement-meta">
+                                                        <span class="court">محكمة النقض</span>
+                                                        <span class="date">5 أكتوبر 2025</span>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="judgement-link"><i class="fas fa-external-link-alt"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                
+                        <section class="archive-section">
+                            <div class="container">
+                                <div class="section-header">
+                                    <h2 class="section-title">أرشيف المجلة</h2>
+                                    <div class="section-actions">
+                                        <a href="#" class="view-all">تصفح الأرشيف الكامل <i class="fas fa-arrow-left"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="archive-grid">
+                                    <div class="archive-card">
+                                        <div class="archive-cover">
+                                            <div class="cover-year">2024</div>
+                                            <h3>مجلة هيئة قضايا الدولة</h3>
+                                            <p>إصدارات عام 2024</p>
+                                        </div>
+                                        <div class="archive-info">
+                                            <h4>أعداد عام 2024</h4>
+                                            <p>4 أعداد صادرة</p>
+                                            <a href="#" class="btn btn-outline">استعرض الأعداد</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="archive-card">
+                                        <div class="archive-cover">
+                                            <div class="cover-year">2023</div>
+                                            <h3>مجلة هيئة قضايا الدولة</h3>
+                                            <p>إصدارات عام 2023</p>
+                                        </div>
+                                        <div class="archive-info">
+                                            <h4>أعداد عام 2023</h4>
+                                            <p>4 أعداد صادرة</p>
+                                            <a href="#" class="btn btn-outline">استعرض الأعداد</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="archive-card">
+                                        <div class="archive-cover">
+                                            <div class="cover-year">2022</div>
+                                            <h3>مجلة هيئة قضايا الدولة</h3>
+                                            <p>إصدارات عام 2022</p>
+                                        </div>
+                                        <div class="archive-info">
+                                            <h4>أعداد عام 2022</h4>
+                                            <p>4 أعداد صادرة</p>
+                                            <a href="#" class="btn btn-outline">استعرض الأعداد</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+
+                </div> 
+
+                <aside class="sidebar sidebar-left">
+                    <div class="sidebar-card about-card">
+                        <div class="about-header">
+                            <img src="logo.png" alt="شعار هيئة قضايا الدولة" class="sidebar-logo">
+                            <h3>كلمة السيد الاستاذ المستشار/ نائب رئيس هيئة قضايا الدولة- رئيس قسم المجلة ومدير التحرير</h3>
+                        </div>
+                        <div class="about-content">
+                            <p>ظلت مجلة "قضايا الدولة" عبر تاريخها منبرًا علميًا وقانونيًا مميزا، احتضن البحوث والدراسات القانونية وساهم في نشر العلم والمعرفة وتعزيز الثقافة القانونية.</p>
+                            <p>واستمرارًا لهذا النهج الرائد، يسعدنا أن نعلن عن إطلاق الموقع الإلكتروني للمجلة، ليكون نافذة جديدة تسهم في نشر الوعي القانوني، تيسر الوصول إلى محتواها لكل المهتمين بالقانون والعدالة.</p>
+                            <p>نؤكد عزمنا على أن يظل هذا الموقع منصة متجددة، تدعم رسالتنا العلمية وتخدم رجال القانون والقضاء بكل أمانة وجدية.</p>
+                        </div>
+                        <div class="signature">
+                            المستشار <br>
+                            ايمن هلال <br>
+                            نائب رئيس هيئة قضايا الدولة <br>
+                            رئيس قسم المجلة ومدير التحرير
+                        </div>
+                    </div>
+                </aside>
+
+            </div> 
+        </div> 
+    </div> 
+
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <img src="logo.png" alt="شعار الهيئة" class="logo">
+                            <div class="logo-text">
+                                <h3>هيئة قضايا الدولة</h3>
+                                <p>الادارة العامة   </p>
+                            </div>
+                        </div>
+                        <p class="footer-description">هيئة قضايا الدولة هي الجهة المختصة بالنيابة عن الدولة فيما يرفع منها أو عليها من دعاوى، والدفاع عنها أمام جهات القضاء.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">أقسام المجلة</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">الدراسات القانونية</a></li>
+                            <li><a href="#">الاجتهادات القضائية</a></li>
+                            <li><a href="#">أخبار الهيئة</a></li>
+                            <li><a href="#">مقالات الرأي</a></li>
+                            <li><a href="#">الذاكرة القضائية</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">روابط سريعة</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">العدد الحالي</a></li>
+                            <li><a href="#">الأعداد السابقة</a></li>
+                            <li><a href="#">إرشادات النشر</a></li>
+                            <li><a href="#">اللجان العلمية</a></li>
+                            <li><a href="#">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">معلومات التواصل</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> العنوان 42 ش جامعة الدول العربية المهندسين الجيزه 
+                                المنيل</p>
+                            <p><i class="far fa-envelope"></i> البريد الإلكتروني: magazine@sla.gov.eg</p>
+                            <p><i class="fas fa-globe"></i> الموقع الإلكتروني: www.scd.gov.eg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2025 مجلة هيئة قضايا الدولة. جميع الحقوق محفوظة.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">سياسة الخصوصية</a>
+                        <a href="#">شروط الاستخدام</a>
+                        <a href="#">إمكانية الوصول</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginModalTitle" hidden>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="loginModalTitle">دخول الأعضاء</h2>
+                <button class="close-modal" aria-label="إغلاق">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="loginEmail">البريد الإلكتروني</label>
+                        <input type="email" id="loginEmail" placeholder="أدخل بريدك الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">كلمة المرور</label>
+                        <input type="password" id="loginPassword" placeholder="أدخل كلمة المرور" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            تذكرني
+                        </label>
+                        <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">تسجيل الدخول</button>
+                </form>
+                <div class="auth-divider">
+                    <span>أو</span>
+                </div>
+                <div class="auth-switch">
+                    <p>ليس لديك حساب؟ <a href="#" id="registerLink">طلب عضوية</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // بسيط: إذا كان script.js لا يتعامل مع #loginBtn، هذا السكربت يفتح المودال.
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginBtn = document.getElementById('loginBtn');
+            const loginModal = document.getElementById('loginModal');
+            const closeModal = document.querySelector('.close-modal');
+
+            if (loginBtn && loginModal) {
+                loginBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    loginModal.hidden = false;
+                    loginModal.classList.add('active');
+                });
+            }
+            if (closeModal && loginModal) {
+                closeModal.addEventListener('click', function () {
+                    loginModal.hidden = true;
+                    loginModal.classList.remove('active');
+                });
+            }
+            // close modal on backdrop click
+            if (loginModal) {
+                loginModal.addEventListener('click', function (e) {
+                    if (e.target === loginModal) {
+                        loginModal.hidden = true;
+                        loginModal.classList.remove('active');
+                    }
+                });
+            }
+
+            // Tabs functionality
+            const tabHeaders = document.querySelectorAll('.tab-header');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    // Remove active class from all
+                    tabHeaders.forEach(h => h.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked header and corresponding content
+                    header.classList.add('active');
+                    const tabId = header.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+
+    </body>
+</html>
